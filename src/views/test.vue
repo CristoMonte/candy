@@ -53,6 +53,7 @@ export default {
     // setInterval(() => {
     //   this. += '!'
     // }, 1000)
+    console.log('change on dev')
   }
 }
 </script>
