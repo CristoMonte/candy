@@ -67,7 +67,7 @@ export default {
     Snack
   },
   mounted () {
-    console.log(this)
+    // console.log(this)
   },
   computed: {
     nowModel: {

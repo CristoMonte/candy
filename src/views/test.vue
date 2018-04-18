@@ -1,8 +1,11 @@
 <template>
   <div>
     <!-- <input type="text" @input="event => message = event.target.value" :value="message"> -->
-    <div>{{a}}</div>
-    <hello :text="text"></hello>
+    <!-- <div>{{a}}</div>
+    <hello :text="text"></hello> -->
+    <div class="test" v-for="(item, index) in itemList" :key="index">{{item}}</div>
+    <div>{{obj.name}}</div>
+    <button @click="handleClick">点我</button>
   </div>
 </template>
 
@@ -16,17 +19,17 @@ export default {
       text: 1,
       a: 2,
       text2: 'text2',
-      inheritAttrs: 'this is value of inheritAttrs'
+      inheritAttrs: 'this is value of inheritAttrs',
+      itemList: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+      obj: {
+        name: 'hah'
+      }
     }
   },
   components: {
     Hello
   },
   computed: {
-    // ctext2 () {
-    //   console.log('computed')
-    //   return 1
-    // }
     ctext2: {
       get () {
         console.log('computed')
@@ -49,11 +52,18 @@ export default {
       deep: false
     }
   },
+  methods: {
+    handleClick () {
+      // this.obj = {name: 'setting', sex: 1}
+      // console.log(this.obj)
+      this.obj.name = 'hh'
+      // this.itemList.push('I')
+    }
+  },
+  beforeCreate () {
+  },
   created () {
-    // setInterval(() => {
-    //   this. += '!'
-    // }, 1000)
-    console.log('change on dev')
+    // this.handleClick()
   }
 }
 </script>

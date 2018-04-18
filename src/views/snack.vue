@@ -8,8 +8,7 @@
 export default {
   props: {
     item: String,
-    id: String,
-    items: Array
+    id: String
   }
 
 }
