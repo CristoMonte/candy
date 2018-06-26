@@ -22,7 +22,7 @@ export default {
       inheritAttrs: 'this is value of inheritAttrs',
       itemList: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
       obj: {
-        name: 'hah'
+        name: 'hhff'
       }
     }
   },
