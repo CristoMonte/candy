@@ -1,5 +1,8 @@
 <template>
-  <div>this file for testing is merge need commit when create a new file on master</div>
+  <div>this file for testing is merge need commit when create a new file on master
+    change on dev
+    to make conflect
+  </div>
 </template>
 
 <script>
