@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
+    <p>测试提交</p>
   </div>
 </template>
 
