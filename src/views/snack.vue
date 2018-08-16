@@ -1,6 +1,6 @@
 <template>
   <div class="snack">
-     <span>{{id}}</span>---<span>{{item}}</span>
+     <span>{{id}}</span>-<span>{{item}}</span>
   </div>
 </template>
 
